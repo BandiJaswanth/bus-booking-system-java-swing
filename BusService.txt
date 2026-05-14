@@ -1,0 +1,35 @@
+package BookingSystem;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BusService {
+
+    private List<Bus> buses = new ArrayList<>();
+
+    public BusService() {
+
+        buses.add(new Bus( "APSRTC Express",
+                "Hyderabad → Vijayawada", "Ramesh", 700));
+
+        buses.add(new Bus( "Orange Travels",
+                "Hyderabad → Bangalore", "Suresh", 500));
+
+        buses.add(new Bus( "SRM Travels",
+                "Chennai → Hyderabad", "Kumar", 800));
+        buses.add(new Bus( "REDBUS ",
+                "Chennai → Bnagalore", "kishore", 700));
+        buses.add(new Bus( "Morning Star",
+                "Hyderabad → Chennai", "prakash", 900));
+        buses.add(new Bus( "ZING BUS",
+                "Hyderabad → Tirupathi", "pavan", 500));
+        
+        
+        
+        
+    }
+
+    public List<Bus> getAllBuses() {
+        return buses;
+    }
+}
